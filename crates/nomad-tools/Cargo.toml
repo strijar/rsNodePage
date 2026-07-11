@@ -1,0 +1,21 @@
+[package]
+name = "nomad-tools"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "nodepage-rs"
+path = "src/bin/nodepage-rs.rs"
+
+[dependencies]
+nomad-core.workspace = true
+rns-identity.workspace = true
+rns-runtime.workspace = true
+rns-transport.workspace = true
+clap.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+hex.workspace = true

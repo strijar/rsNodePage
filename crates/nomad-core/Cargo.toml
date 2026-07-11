@@ -1,0 +1,23 @@
+[package]
+name = "nomad-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+rns-crypto.workspace = true
+rns-wire.workspace = true
+rns-identity.workspace = true
+rns-runtime.workspace = true
+rns-transport.workspace = true
+tokio.workspace = true
+rmpv.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+hex.workspace = true
+bytes = "1"
+rhai = { version = "1", features = ["sync"] }
+
+[dev-dependencies]
+tempfile = "3"
